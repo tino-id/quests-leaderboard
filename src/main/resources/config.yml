@@ -1,0 +1,14 @@
+database:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "password"
+  database: "minecraft"
+  # Connection pool settings
+  connection-timeout: 30000 # Maximum time to wait for a connection from pool (in ms, default: 30s)
+  max-lifetime: 1800000 # Maximum lifetime of a connection in the pool (in ms, default: 30min)
+
+settings:
+  update-interval: 300 # in seconds (5 minutes)
+  query-timeout: 10 # Maximum time for a single query to execute (in seconds, default: 10s)
+  leaderboard-size: 10 # Number of top players to display (default: 10)

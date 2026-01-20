@@ -1,0 +1,20 @@
+name: QuestsLeaderboard
+version: '${project.version}'
+main: codes.tino.quests.leaderboard.QuestsLeaderboardPlugin
+api-version: '1.21'
+depend:
+  - PlaceholderAPI
+
+commands:
+  questleaderboard:
+    description: Main command for QuestsLeaderboard
+    usage: /questleaderboard [reload]
+    permission: questleaderboard.use
+
+permissions:
+  questleaderboard.use:
+    description: Allows using the /questleaderboard command
+    default: op
+  questleaderboard.reload:
+    description: Allows reloading the plugin configuration
+    default: op
